@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Registration Form</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #007bff;
+        }
+        label {
+            font-weight: bold;
+            color: #555555;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container col-md-6">
+        <h2>Team Registration Form</h2>
+        <form method="post" action="save_data_team.php">
+            <div class="form-group">
+                <label for="team_name">Team Name:</label>
+                <input type="text" id="team_name" name="team_name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="member_one">Member One:</label>
+                <input type="text" id="member_one" name="member_one" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="member_two">Member Two:</label>
+                <input type="text" id="member_two" name="member_two" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="member_three">Member Three:</label>
+                <input type="text" id="member_three" name="member_three" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="member_four">Member Four:</label>
+                <input type="text" id="member_four" name="member_four" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="member_five">Member Five:</label>
+                <input type="text" id="member_five" name="member_five" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+        </form>
+    </div>
+
+    
+</body>
+</html>
